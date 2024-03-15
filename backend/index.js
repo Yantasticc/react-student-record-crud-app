@@ -5,7 +5,13 @@ const app = express();
 const router = require('./router/router.js')
 
 var cors = require('cors')
-app.use(cors())
+app.use(cors(
+    {
+        origin: ["https://react-student-record-crud-app-frontend.vercel.app/"],
+        methods: ['POST', 'GET', 'DELETE', 'PATCH'],
+        credentials: true
+    }
+))
 app.use(express.json())
 app.use(router)
 
