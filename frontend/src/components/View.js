@@ -10,7 +10,7 @@ const View = () => {
   
   // Get data by ID
   const getStudentData = async () => {
-    const res = await fetch(`http://localhost:8001/getStudentById/${id}`, {
+    const res = await fetch(`https://react-student-record-crud-app-api.vercel.app/getStudentById/${id}`, {
       method:"GET",
       headers: {
         "Content-Type": "application/json"

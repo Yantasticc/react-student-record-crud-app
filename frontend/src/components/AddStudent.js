@@ -27,7 +27,7 @@ const AddStudent = () => {
 
     const { name, course, address, contact } = inputData;
 
-    const res = await fetch("http://localhost:8001/addStudent", {
+    const res = await fetch("https://react-student-record-crud-app-api.vercel.app/addStudent", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -7,7 +7,7 @@ const AllStudents = () => {
 
     // get all students data
     const  getAllStudents = async()=>{
-        const res = await fetch("http://localhost:8001/getStudent", {
+        const res = await fetch("https://react-student-record-crud-app-api.vercel.app/getStudent", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -31,7 +31,7 @@ const AllStudents = () => {
 
     // Delete student data
     const deleteStudent = async (id) => {
-        const res = await fetch(`http://localhost:8001/deleteStudent/${id}`, {
+        const res = await fetch(`https://react-student-record-crud-app-api.vercel.app/deleteStudent/${id}`, {
             method: "DELETE",
             headers:{
                 "Content-Type":"application/json"
